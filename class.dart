@@ -110,4 +110,14 @@ void main() {
 
   letVerifyTheValue(10);
   letVerifyTheValue(0);
+
+  const netSalary = 700;
+  const expenses = 250;
+  if(netSalary > expenses) {
+    print('You have saved \$${netSalary - expenses} this month');
+  }else if(netSalary < expenses){
+    print('You have lost \$${expenses - netSalary} this month');
+  }else {
+    print('Your balance \$${netSalary} has not changed');
+  }
 }

@@ -151,6 +151,13 @@ void main() {
   var list = ['apple', 'orange', 'banana'];
   list.forEach((items) => print(items));
   print(sum(2, 6));
+
+  // CONVERSION BTW TYPES
+  int w = 10;
+  double o = w.toDouble();
+  double p = 20;
+  int q = 40.6.round();
+  print(q);
 }
 
   // FUNCTION

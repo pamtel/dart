@@ -98,6 +98,14 @@ main() {
   String lovePizza = 'I love Pizza';
   bool containsPizza = lovePizza.contains('Pizza');
   print(containsPizza);
+
+  // WHEN TO USE VAR, CONST, FINAL
+  const text = 'i like pizza';
+  const toppings = 'with tomatoes';
+  var favorite = '$text $toppings';
+  final newText = favorite.replaceAll('pizza', 'pasta');
+  favorite = 'Now i like curry';
+  print(newText);
 }
 
 /*
