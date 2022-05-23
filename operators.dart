@@ -154,7 +154,9 @@ void main() {
 
   // CONVERSION BTW TYPES
   int w = 10;
+  // ignore: unused_local_variable
   double o = w.toDouble();
+  // ignore: unused_local_variable
   double p = 20;
   int q = 40.6.round();
   print(q);
