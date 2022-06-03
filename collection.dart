@@ -113,6 +113,7 @@ void main() {
     if (addBlue)
       'blue',
     if (addRed) 
+      // ignore: dead_code
       'red'
   ];
   for (var color in extraColors) {
