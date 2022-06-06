@@ -24,4 +24,32 @@ void main() {
   print('list: $list');
   print('copy1: $copy1');
   print('copy2: $copy2');
+
+  // NULL
+  int x = 42;
+  int? sign;
+  if (x >= 0) {
+    sign = 1;
+  }else {
+    sign = -1;
+  }
+  print(sign);
+
+  int? maybeValue;
+  if (x > 0) {
+    maybeValue = x;
+  }
+  // assign value to maybeValue is it's empty
+  // maybeValue ??= 0;
+  int value = maybeValue!;
+  // int value1 = maybeValue ?? 0;
+  print(value);
+
+  const cities = <String?>['London', 'Paris', null];
+  for (var city in cities) {
+    // if (city != null) {
+    //   print(city.toUpperCase());
+    // }
+    print(city?.toUpperCase());
+  }
 }
