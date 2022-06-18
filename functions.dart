@@ -12,6 +12,10 @@ void main() {
   Sum([]);
   Sum([1, 2]);
   Sum([1, 2, 3, 4]);
+
+  // Anonymous Function
+  final sayHello = (String name) => 'Hi, $name';
+  print(sayHello('Helen'));
 }
 
 void sayHi() {
